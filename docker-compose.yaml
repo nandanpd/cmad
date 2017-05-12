@@ -1,0 +1,10 @@
+app: 
+  image: "nandanpd/cmad:v0.1.0"
+  links: 
+    - mongodb:mongo
+  ports:
+   - 8080:8080
+mongodb: 
+  image: "mongo:latest"
+  ports:
+   - 27017:27017
